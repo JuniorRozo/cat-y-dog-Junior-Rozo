@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Veterinario Caninos y Felinos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ed6565;
+        }
+
+        header {
+            background-color: #4a1111;
+            color: rgb(255, 255, 255);
+            padding: 20px;
+            text-align: center;
+        }
+       
+        header img {
+            height: 100px;
+            vertical-align: middle;
+            margin-right: 10px;
+            margin-top: -10px;
+            border-radius: 120px;
+            float: right;
+        }
+
+        nav {
+            background-color: #ff0000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(255, 255, 255);
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .content, .appointment-form {
+            background-color: #4a1111;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgb(195, 187, 187);
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .content h2, .appointment-form h2 {
+            color: #ff0202;
+        }
+
+        .content img {
+            width: 50%;
+            height: auto;
+            float: right;
+            border-radius: 20px;
+        }
+
+        .appointment-form input, .appointment-form select {
+            width: calc(100% - 10px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #409d2d;
+            border-radius: 5px;
+        }
+
+        .appointment-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #ff0000;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff0000;
+            color: white;
+            margin-top: 20px;
+            
+        }
+        .content p{
+            color: #ffffff;
+
+        }
+        .appointment-form label{
+            color: #ffffff;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="logo" src="logooo.jpg" alt="Logo Caninos y Felinos">
+        <h1>Centro Veterinario Caninos y Felinos</h1>
+    </header>
+
+    <nav>
+        <a href="#">Servicios</a>
+        <a href="#">Productos</a>
+        <a href="#">Guardería</a>
+        <a href="#">Promociones</a>
+    </nav>
+
+    <section>
+        <div class="content">
+            <h2>Cuidados y educación para su perro</h2>
+            <img  src="husky.png" alt="Perro Cuidados" width="">
+            <p>Mantener a tu perro saludable y bien educado requiere una dieta balanceada, ejercicio regular, visitas veterinarias, y entrenamiento básico. Asegúrate de proporcionarle la atención médica necesaria, socialización desde cachorro y cuidados de higiene como el cepillado y el baño. Todo esto contribuye a su bienestar y a una convivencia armoniosa en el hogar. <a href="#">Ver más...</a></p>
+            
+            <h2>Salir de viaje con su mascota</h2>
+            <img src="viaje.jpg" alt="Perro Viaje">
+            <p>Viajar con tu mascota puede ser una experiencia agradable si planificas con antelación. Asegúrate de llevar sus documentos veterinarios, una jaula o transportadora segura, y sus pertenencias esenciales como agua, comida y juguetes. Durante el viaje, haz paradas frecuentes para que pueda estirarse y descansar. Verifica que el destino y el alojamiento sean aptos para mascotas, garantizando así un viaje cómodo y sin contratiempos.<a href="#">Ver más...</a></p>
+        </div>
+
+        <div class="appointment-form">
+            <h2>Solicitar cita médica</h2>
+            <form>
+                <label for="mascota">Mascota:</label>
+                <input type="text" id="mascota" name="mascota" placeholder="Ingrese Nombre">
+
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese Edad">
+
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" name="raza" placeholder="Ingrese Raza">
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora">
+
+                <label for="amo">Amo:</label>
+                <input type="text" id="amo" name="amo" placeholder="Ingrese Nombre">
+
+                <button type="submit">VALIDAR CITA</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contáctenos <br>
+            Línea gratuita 018000-00001 
+            <br>Correo: preguntas@caninosyfelinos.com </p>
+    </footer>
+
+</body>
+</html>
